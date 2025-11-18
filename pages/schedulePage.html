@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Agendamento - Barbearia Premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/schedulePage.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <i class="fas fa-cut"></i>
+                <h2>Barbearia Premium</h2>
+            </div>
+            <div class="user-section">
+                <span class="welcome-text">Bem-vindo,</span>
+                <span class="user-name" id="userName">Usuário</span>
+                <button class="logout-btn" title="Sair">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <i class="fas fa-calendar-plus"></i>
+                <h1>Novo Agendamento</h1>
+                <p class="subtitle">Escolha o barbeiro, data e horário para seu atendimento</p>
+            </div>
+
+            <form id="scheduleForm">
+                <!-- Seleção de Barbeiro -->
+                <div class="campo">
+                    <label for="barberId">
+                        <i class="fas fa-user-tie"></i>
+                        Selecione o Barbeiro
+                    </label>
+                    <select id="barberId" name="barberId" required>
+                        <option value="">Escolha um barbeiro...</option>
+                    </select>
+                </div>
+
+                <!-- Data do Agendamento -->
+                <div class="campo">
+                    <label for="scheduleDate">
+                        <i class="fas fa-calendar-day"></i>
+                        Data do Agendamento
+                    </label>
+                    <input type="date" id="scheduleDate" name="scheduleDate" required />
+                </div>
+
+                <!-- Horário do Agendamento -->
+                <div class="campo">
+                    <label for="scheduleTime">
+                        <i class="fas fa-clock"></i>
+                        Horário
+                    </label>
+                    <input type="time" id="scheduleTime" name="scheduleTime" required />
+                </div>
+
+                <!-- Observações -->
+                <div class="campo">
+                    <label for="observations">
+                        <i class="fas fa-comment"></i>
+                        Observações (Opcional)
+                    </label>
+                    <textarea id="observations" name="observations" rows="4"
+                        placeholder="Adicione alguma observação ou preferência..."></textarea>
+                </div>
+
+                <!-- Botões -->
+                <div class="button-group">
+                    <button type="button" class="btn-secondary">
+                        <i class="fas fa-arrow-left"></i>
+                        Voltar
+                    </button>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-check"></i>
+                        Confirmar Agendamento
+                    </button>
+                </div>
+            </form>
+
+            <!-- Card de Resumo -->
+            <div class="summary-card" id="summaryCard" style="display: none;">
+                <h3><i class="fas fa-info-circle"></i> Resumo do Agendamento</h3>
+                <div class="summary-content">
+                    <div class="summary-item">
+                        <span class="label">Barbeiro:</span>
+                        <span class="value" id="summaryBarber">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Data:</span>
+                        <span class="value" id="summaryDate">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Horário:</span>
+                        <span class="value" id="summaryTime">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
