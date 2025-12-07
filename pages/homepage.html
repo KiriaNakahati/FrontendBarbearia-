@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Home - Barbearia Premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/homepage.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <i class="fas fa-cut"></i>
+                <h2>Barbearia Premium</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Meus Agendamentos</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Perfil</span>
+                </a>
+            </nav>
+            <div class="user-section">
+                <span class="user-name" id="userName">Usuário</span>
+                <button class="logout-btn" title="Sair">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à Barbearia Premium</h1>
+            <p>Estilo, elegância e qualidade em cada corte</p>
+        </div>
+    </section>
+
+
+    <main class="main-content">
+        <div class="container">
+            <section class="quick-actions">
+                <h2 class="section-title">Acesso Rápido</h2>
+                <div class="actions-grid">
+                    <div class="action-card">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-plus"></i>
+                        </div>
+                        <h3>Novo Agendamento</h3>
+                        <p>Agende seu próximo atendimento</p>
+                        <a href="#" class="card-btn">Agendar</a>
+                    </div>
+
+                    <div class="action-card">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Meus Agendamentos</h3>
+                        <p>Visualize seus agendamentos</p>
+                        <a href="#" class="card-btn">Ver Todos</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="upcoming-appointments">
+                <h2 class="section-title">Próximos Agendamentos</h2>
+                <div class="appointments-list" id="appointmentsList">
+                    <div class="empty-state">
+                        <i class="fas fa-calendar-times"></i>
+                        <p>Você não possui agendamentos futuros</p>
+                        <button class="btn-primary">
+                            <i class="fas fa-plus"></i>
+                            Criar Agendamento
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team">
+                <h2 class="section-title">Nossa Equipe</h2>
+                <p>......</p>
+                <div class="team-grid" id="teamGrid">
+                </div>
+            </section>
+
+
+            <section class="services">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-cut"></i>
+                        <h3>Corte de Cabelo</h3>
+                        <p>Cortes modernos e clássicos</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fas fa-soap"></i>
+                        <h3>Barba</h3>
+                        <p>Design e aparação de barba</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fas fa-spray-can"></i>
+                        <h3>Acabamento</h3>
+                        <p>Finalização profissional</p>
+                    </div>
+
+                    <div class="service-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Pigmentação</h3>
+                        <p>Coloração e tonalização</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hours">
+                <h2 class="section-title">Horário de Funcionamento</h2>
+                <div class="hours-card">
+                    <div class="hours-item">
+                        <span class="day">Segunda a Sexta</span>
+                        <span class="time">08:00 - 19:00</span>
+                    </div>
+                    <div class="hours-item">
+                        <span class="day">Sábado</span>
+                        <span class="time">08:00 - 17:00</span>
+                    </div>
+                    <div class="hours-item">
+                        <span class="day">Domingo</span>
+                        <span class="time">Fechado</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Barbearia Premium</h3>
+                <p>Estilo e qualidade desde 2020</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p><i class="fas fa-phone"></i> (45) 99999-9999</p>
+                <p><i class="fas fa-envelope"></i> contato@barberiapremium.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Barbearia Premium. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
